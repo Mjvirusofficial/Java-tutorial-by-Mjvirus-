@@ -1,0 +1,450 @@
+12 Jan 2022# Starting java programming____________#
+
+#What is programming?
+Programming is a way to talk with system or computer.
+
+
+1.What is java? 
+#Java is a class based object oriented programming language. Which is used to develop games & API
+
+Java name came from coffee.
+
+Java c or c++ se mil k bna h
+
+Java develop by James gosling in 1991
+
+Java is son Microsystems product.
+
+Java programming language ka naam pehly oak tha.
+
+Java k naam ka ek island v h
+
+2.Who is software engineer?
+#Software engineer is technique which is used to develop software for the computer system & any other electronic devices.
+ 
+3.What is oops?
+#Oops stand for object oriented programming language, The main purpose of opps is to deal with real world entities using programing language.
+
+Oops features:-
+1.Class.                    Group of objects 
+
+2.Object.                   Instance of class
+
+3.Inheritance.           Reuse ka ability 
+
+Inheritance is a most important feature of java which is used to provide The reused ability of the program.
+
+4.Polymorphism.     Same object but having different behaviour
+
+5.Encapsulation. wrapped bandhny ka km krta h ek single unit mai.
+
+
+6.Data Abstraction. Hiding & showing.
+
+
+Class:- Collection of objects is known as class.
+
+Object:- Object is a instance of class mtlb object k bante hi class k liye memory banti h.
+
+___________________________________________________________________________________________
+2. What is object?
+#Object is a instance of class. Means, Whenever the class is defined in the program. 
+
+There is no memory allocated but when the object is initialized memory is allocated of the class.
+
+Object creation:-
+Class name object = new class name
+
+Object.function name
+___________________________________________________________________________________________
+A program#
+
+class Mj{
+void add(){
+    int a=5,b=5,c;
+    c=a+b;
+    System.out.println("Addition:-"+c);
+}
+}
+
+class Main{
+public static void main(String args[]){
+    Mj virus = new Mj();
+    virus.add();
+}
+}
+__________________________________________________________________________________________
+
+3.What is Inheritance?
+#it is the most important feature in java which is used to provide reused ability of the program.
+
+In inheritance, one class accessing the all properties of another class.
+Using extends keyword.
+
+Iska mtlb @gar aap 4 new new class bnaty ho kisi program mai to tm usey access krny k liye aapko dher sara object nii bnana hoga.
+______________________________________________________________________________________________
+A program of inheritance#
+
+Class b extends a(){
+
+}
+
+
+class a
+{
+  void aclass()
+  {
+    System.out.println("Hy, This is class A");
+   }
+}
+
+class b extends a{
+    void bclass()
+    {
+      System.out.println("hi, This is class B");
+    }
+}
+
+
+class Main{
+    public static void main(String mjvirus[])
+    {
+        b ob = new b();
+        ob.aclass();
+        ob.bclass();
+    }
+}
+_______________________________________________________________________________________________
+
+4. What is Class?
+#Class is nothing but group of objects is known as class, Class doesn't take any space on memory.
+
+It's two type:-
+1.Predefine & 2nd is User defined
+Predefined, means it allready available & exist in java for e.g:- Scanner,  Console, System, String etc.
+
+
+
+2.Userdeifine.
+User defined, means it's written by user of program. For e.g:- Mj, virus, any_name, alphabet, anything etc.
+
+Like this#
+Class Mj_virus
+{
+      System.out.println("Hy, this is Mj virus");
+}
+
+__________________________________________________________________________________________
+
+5.What is Encapsulation?
+#Encapsulation is a mechanism, which is used to wrapped all the data & method in a single unit
+
+In Encapsulation, Declared the class variable as a private.
+
+/*Note condition in new style:- System.out.println(virus%2==0?"Even":"Odd");
+
+Varriable == number? "True" : "false"
+
+Private in */
+
+6.What is Abstraction?
+#Abstraction is also the most important feature of the java, it is used to hiding the essential features of the program.
+
+In other word, it is the process which is used to hiding the impletation details from the user.
+
+Show Only the highlighted set of service to the user.
+
+Advantages:- 1st is security & 2nd is Enhancement. Means when we change programming & make update user doesn't know that thing.
+
+Abstract program#
+
+import java.util.Scanner;
+abstract class Forest
+{
+	abstract void family();
+	{
+		System.out.println("###### Forest, forest is house of Animals ######");
+	}
+}
+
+class Animals extends Forest
+{
+	void family()
+	{ 
+	System.out.println("\nThe family of this house:-\n1.Elephant\n2.Monkey\n3.Tiger\n4.Lion\n\n\nPlease tell me if you know the more Animals name\n>>>\n");
+		
+		
+		Scanner mj= new Scanner(System.in);        String more = mj.next();
+		
+		System.out.println("\n######### Updated Animals family list #########\n\nThe family of this house:-\n1.Elephant\n2.Monkey\n3.Tiger\n4.Lion");
+		
+		System.out.println("5."+more);
+		
+	}
+}
+
+class Mj_virus
+{
+	public static void main(String mjvirus[])
+	{
+		Forest child = new Animals();
+		child.family();
+	}
+}
+
+
+__________________________________________________________________________________________
+
+2nd Abstract program#
+
+abstract class Animals
+{
+    abstract void sound();
+   
+}
+
+class Dog extends Animals
+{
+   public void sound()
+    {
+        System.out.println("Dog is barking");
+    }
+    
+}
+
+class Lion extends Animals 
+{
+    public void sound()
+    {
+        System.out.println("Lion is roar");
+    }
+
+    
+}
+
+
+class Mjvirus
+{
+    public static void main(String mjvirus[])
+    {
+        Dog d = new Dog();
+        d.sound();
+        Lion l = new Lion();
+        l.sound();
+    }
+}
+____________________________________________________________________________________________
+
+7.What is polymorphism?
+#Polymorphism came from freak word which mean same object having different behaviour.
+
+
+
+8.What is constructor?
+#Constructor is special type of methods whose name as same as class name.
+
+The main purpose of constructor is initialized the object.
+
+Every java class has a Constructor.
+
+A Constructor is allready called at the time of object creation.
+
+Constructor program#
+
+class Mjvirus
+{
+    Mjvirus()
+    {
+        System.out.println("Hii, this is Contstructor#");
+    }
+}
+
+class Mj
+{
+    public static void main(String mjvirus[])
+    {
+        Mjvirus mj = new Mjvirus();
+    }
+}
+
+__________________________________________________________________________________________
+9.What do you understand by portable and plateform Independency?
+
+
+Portable and plateform independency:-
+
+Portable is a general word, Whose meaning is easy to carry.
+& 
+Plateform Independency is the computer science word, Whose meaning is CORA.
+
+CORA Means, Compile Once Run Anywhere. Mtlb ek OS me compile kijiye and kisi v OS me run kr skty ho.
+
+CORA:- COMPILE ONCE RUN ANYWHERE.
+
+WORA:- WRITE ONCE RUN ANYWHERE
+
+_________________________________________________________________________________________________________
+
+10.What is the Binding? 
+Binding is the process which is used to bind or conect the object from class method.
+
+#Two types of the of Binding
+1.Static binding. At compile tym bind
+
+2.Dynamic binding. At run tym bind.
+
+Tell me more @bout binding...!
+________________________________________________________________________________________________________
+
+11. Define Compiled & interpreted.
+
+Compiled:- It scan the entire program first and translate it into machine code.
+
+Ismai error run krny k baad aata h 
+Error occurs after scanning the whole program.
+
+Compiler show all errors & warning at a same time.
+
+Debugging is slow.
+
+Execution time is less.
+
+Compiler is used by languages such as :- C, C++ etc....
+
+
+Interpreted:- It scan line by line program and convert into machine code.
+
+Error occurs after scanning each line.
+
+Interpreter show one error at a time.
+
+Debugging is fast.
+
+Execution time is more.
+
+Interpreter is used by these languages such as:- java, python etc......
+_________________________________________________________________________________________________________
+
+12.What is interface?
+Interface is just like a class, which contains the abstract method.
+
+In other words:- it is Collection of abstract method.
+
+Interface has default public, static, final.
+
+Interface deals between client & developer.
+_________________________________________________________________________________________________________
+Interface program:-
+
+import java.util.Scanner;
+interface client 
+{
+	void name();
+	void roll_no();
+}
+
+class Deepak implements client
+{
+	String name; int roll;
+	Scanner mj = new Scanner(System.in);
+	public void name()
+	{
+	
+	
+	System.out.println("Enter your name\n>>>");
+    name=mj.nextLine();
+    
+	}
+	
+	public void roll_no()
+	{
+		    System.out.println("Enter your roll no\n>>>");
+    roll = mj.nextInt();
+    
+    System.out.println("\nHy, " + name + " your roll no is  " + roll);
+	}
+}
+
+
+class Mjvirus
+{
+	public static void main (String mjvirus[])
+	{
+		client c = new Deepak();
+		c.name();
+		c.roll_no();
+	}
+}
+
+_________________________________________________________________________________________________________
+
+12. What is Multithreading? With example.
+Multithreading is a process of executing multiple thread at a same time without dependency on other thread.
+
+Multithreading work on a single program.
+
+Execution is fast in Multithreading.
+
+E.g:- 1Single program ko 4 thread me baat dena.
+
+Supose ek kaam h like. Ground saaf krna h to 5 se 6 logo k bich agar kaam baat diya jaye to kaam jaldi khatm hoga.
+
+14.What is thread?
+Thread is a predefined class which is available in java.lang package.
+
+Thread is basic unit of c.p.u and it is well known for indipendent execution.
+_________________________________________________________________________________________________________
+
+15.What is Exception?
+Exception is unexpected/ unwanted/ abnormal situation that occured at run time called exception.
+
+16.What is Exception handling?
+In exception handling, we should an alternat source that can handle the exception.
+
+In other words:- Exception handling is a alternat source in java which is used to handle the exception of the program.
+
+The object oriented mechanism provides the following techniques to work with exception.
+
+1.Try 
+2.Catch
+3.Throw
+4.Throws
+5.Finally
+
+*Tell me more @bout that if you know...!
+
+17.What is pakage?
+It is way to arrenge the number of class, interfaces and sub-pakages of same type into a particular group. 
+
+Pakages are two type:-
+1st predefined &
+2nd user-defined
+
+Example of pre-defined is:-
+Java.lang
+Java.util
+Java.io
+Java.applet
+Java.net
+Java.mysql.  etc.
+
+User defined created by user#
+Pakage add
+Pakage My data etc.
+
+The Advantageof Pakages is :-  Provide the reuseablity, security, fast searching, hiding & naming conflecting.
+
+Naming conflecting means toh we can use same name of classes in different Pakages.
+
+
+Pakage have a disadvantage that we can't pass parameters in Pakages 
+
+Ex:- pakage add(1) that like this hm ese nii kr skty.
+
+If you really read all the notes & if you interested to tell me more @bout the java programming language then plzz contact ❤️
+
+To be continued....
+
+
+
+
